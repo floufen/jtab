@@ -137,7 +137,7 @@ impl Printer for TablePrinter {
         let mut table = Table::new();
 
         // header row
-        table.add_row(
+        table.set_titles(
             Row::new(
                 match &data.headers {
                     TableHeader::NamedFields { fields } => {
